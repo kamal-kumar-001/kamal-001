@@ -1,0 +1,90 @@
+.portfolio {
+    margin: auto;
+    max-width: 800px;
+
+    h1 {
+        font-size: 30px;
+        color: aliceblue;
+        text-align: center;
+        margin-top: 20%;
+    }
+
+    &__content {
+        // padding: 20px;
+        width: 100%;
+
+        &__card {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 30px;
+
+            &__item {
+                height: 300px;
+                cursor: pointer;
+                position: relative;
+
+                &:hover .overlay {
+                    opacity: 1;
+                }
+
+                &__img-wrapper {
+                    height: 100%;
+
+                    p {
+
+                        height: 100%;
+
+                        img {
+                            border-radius: 10px;
+                            height: inherit;
+                            object-fit: cover;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                
+            }
+            &__item:hover {
+                .overlay {
+                    visibility: visible;
+                    font-size: 25px;
+                    margin-top: -82px;
+                    background: grey;
+                    padding: 3px 20px;
+                    color: var(--selected-theme-sub-text-color);
+                    transition: 0.5s all ease;
+                    transition-delay: 0.5s;
+                }
+            }
+            .overlay {
+                
+                visibility: hidden;
+                font-size: 25px;
+                margin-top: -82px;
+                background: grey;
+                padding: 3px 20px;
+                color: var(--selected-theme-sub-text-color);
+                // transition: 0.5s all ease;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width : 480px) {
+
+    .portfolio__content__card {
+        margin: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width : 481px) and (max-width : 768px) {
+    .portfolio__content__card {
+        margin: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

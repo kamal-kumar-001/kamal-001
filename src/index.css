@@ -1,13 +1,97 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+  --selected-theme-background-color: var(--yellow-theme-background-color);
+  --selected-theme-main-color: var(--yellow-theme-main-color);
+  --selected-theme-sub-text-color: var(--yellow-theme-sub-text-color);
+  --selected-theme-nav-background-color: var(--yellow-theme-nav-background-color);
+  /* primary color yellow */
+  --yellow-theme-background-color: transparent;
+  --yellow-theme-main-color: #ff9800;
+  --yellow-theme-sub-text-color: #ffffff;
+  --yellow-theme-nav-background-color: #222;
+
+  --blood-theme-background-color: transparent;
+  --blood-theme-main-color: #ed2a2a;
+  --blood-theme-sub-text-color: #ffffff;
+  --blood-theme-nav-background-color: #111;
+
+  --green-theme-background-color: transparent;
+  --green-theme-main-color: #66B95C;
+  --green-theme-sub-text-color: #ffffff;
+  --green-theme-nav-background-color: #111;
+
+  --blue-theme-background-color: transparent;
+  --blue-theme-main-color: #4169e1;
+  --blue-theme-sub-text-color: #ffffff;
+  --blue-theme-nav-background-color: #222;
+
+  --cream-theme-background-color: transparent;
+  --cream-theme-main-color: #f39977;
+  --cream-theme-sub-text-color: #ffffff;
+  --cream-theme-nav-background-color: #222;
+
+  --sky-theme-background-color: transparent;
+  --sky-theme-main-color: #00D4BD;
+  --sky-theme-sub-text-color: #ffffff;
+  --sky-theme-nav-background-color: #222;
+
+  --grey-theme-background-color: transparent;
+  --grey-theme-main-color: #5e9e9f;
+  --grey-theme-sub-text-color: #ffffff;
+  --grey-theme-nav-background-color: #222;
+
+  --pink-theme-background-color: transparent;
+  --pink-theme-main-color: #ff5e94;
+  --pink-theme-sub-text-color: #ffffff;
+  --pink-theme-nav-background-color: #222;
+
+  --purple-theme-background-color: transparent;
+  --purple-theme-main-color: #9200ee;
+  --purple-theme-sub-text-color: #ffffff;
+  --purple-theme-nav-background-color: #222;
+
+  --red-theme-background-color: transparent;
+  --red-theme-main-color: #EB4A4C;
+  --red-theme-sub-text-color: #ffffff;
+  --red-theme-nav-background-color: #222;
+
+  --greygen-theme-background-color: transparent;
+  --greygen-theme-main-color: #666d41;
+  --greygen-theme-sub-text-color: #ffffff;
+  --greygen-theme-nav-background-color: #222;
+
+  --orange-theme-background-color: transparent;
+  --orange-theme-main-color: #fa5b0f;
+  --orange-theme-sub-text-color: #ffffff;
+  --orange-theme-nav-background-color: #222;
+
+  --font-base: "Poppins";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  background-color: transparent;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins";
+  background: var(--selected-theme-background-color);
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+#particle-wave{
+  z-index: -1;
 }

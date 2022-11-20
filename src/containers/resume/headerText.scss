@@ -1,0 +1,27 @@
+.wrapper {
+
+    padding-top: 0;
+    padding-bottom: 0;
+    // width: 455px;
+
+    h2 {
+        gap: 10px;
+        padding-bottom: 20px;
+        font-size: 19px;
+        font-weight: 300;
+        letter-spacing: 1.5px;
+        line-height: 1rem;
+        text-transform: capitalize;
+        color: var(--selected-theme-sub-text-color);
+        position: relative;
+        display: flex;
+        flex: 1;
+        border-bottom: 1px dashed var(--selected-theme-main-color);
+
+
+    }
+
+    .lastText {
+        color: var(--selected-theme-main-color);
+    }
+}

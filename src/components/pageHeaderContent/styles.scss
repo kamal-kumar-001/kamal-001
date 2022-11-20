@@ -1,0 +1,53 @@
+.wrapper {
+    // margin: auto;
+    // max-width: 800px;
+    // justify-content: center;
+    display: flex;
+    align-items: center;
+    // padding-top: 80px;
+    // margin-top: 80px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed var(--selected-theme-main-color);
+    gap: 10px;
+
+    h2 {
+        gap: 10px;
+        font-size: 36px;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        line-height: 1rem;
+        text-transform: capitalize;
+        color: var(--selected-theme-sub-text-color);
+        position: relative;
+        display: flex;
+        flex: 1;
+
+
+    }
+
+    .lastText {
+        color: var(--selected-theme-main-color);
+    }
+
+
+    span {
+        svg {
+            color: var(--selected-theme-main-color);
+        }
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .wrapper {
+        padding: 0 20px;
+        padding-top: 30px;
+
+        h2 {
+            gap: 10px;
+            font-size: 20px;
+            font-weight: 300;
+            padding: 10px;
+        }
+
+    }
+}
